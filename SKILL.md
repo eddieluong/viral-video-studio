@@ -133,6 +133,12 @@ For each of the 6 frames, write Midjourney/DALL-E prompts following this formula
 
 > **🎀 Cute Factor:** Cute characters — chubby body, round shape, big eyes — create instant emotional investment. The cuter the character, the faster viewers bond and the harder they laugh at failures. Lean into exaggerated cuteness. See `references/character-bible.md` for the Cute Factor framework.
 
+**Video generation options (choose by budget):**
+- **Budget**: DALL-E images → CapCut slideshow (~$0.50/video)
+- **Mid**: Hailuo AI video clips → CapCut (~$0.75/video)
+- **Best quality**: Kling AI with character reference image (~$1-3/video)
+- See `references/video-generation-tools.md` for full comparison, pricing, and all 15 Kling AI prompts for Hammy video.
+
 See `references/prompt-templates.md` for 10 ready-to-use prompt templates.
 See `references/script-templates.md` for 4 full script templates + 30 content ideas.
 See `references/character-bible.md` for character archetypes, quality checklist, and emotional arc framework.
