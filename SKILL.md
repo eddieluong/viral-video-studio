@@ -146,23 +146,102 @@ See `references/viral-analysis.md` for the 7 viral triggers, deep analysis proto
 
 ---
 
-## Step 6: Full Script with Text Overlays
+## Step 6: Full Scene-by-Scene Script
 
-For each frame, specify:
+For EVERY scene (frame), specify ALL of the following in detail:
 
 ```
-Frame [N] — [TIMESTAMP]
-Visual: [What the AI image shows]
-Text overlay: "[On-screen text — max 6 words]"
-Sound: [Music cue / Sound effect]
-Duration: [seconds]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CẢNH [N] — [TIMESTAMP, e.g. 0:00-0:03]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👁️ HÌNH ẢNH (Visual):
+  - Nhân vật: [Ai? Đang làm gì? Biểu cảm gì? Tư thế?]
+  - Bối cảnh: [Địa điểm, ánh sáng, góc máy]
+  - Chuyển động: [Static / Ken Burns zoom in / Ken Burns zoom out / Pan]
+  - Chi tiết quan trọng: [Vật thể nào nổi bật? Màu sắc chủ đạo?]
+
+🎨 DALL-E / MIDJOURNEY PROMPT:
+  "[Character description], [action], [setting], [emotion], [lighting], photorealistic, 9:16 vertical"
+  Negative prompt: "blurry, deformed, text, watermark"
+
+📝 TEXT OVERLAY:
+  Nội dung: "[Tối đa 6 từ + emoji]"
+  Vị trí: [Top / Bottom / Center]
+  Font style: [Bold white + black stroke]
+
+🔊 ÂM THANH:
+  Nhạc nền: [Tên loại nhạc / mood: sneaky / dramatic / happy / sad...]
+  SFX: [Tên sound effect cụ thể: "record scratch" / "vine boom" / "sad trombone" / không có]
+  Volume nhạc: [100% / 70% / 50%]
+
+⏱️ THỜI LƯỢNG: [X giây]
+🎭 CẢM XÚC MỤC TIÊU: [Người xem cảm thấy gì ở cảnh này?]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
-Text overlay rules:
-- Max 6 words per frame
-- Use emoji to replace words where possible
-- Contrast color: white text + black stroke, or vice versa
-- Placement: top 1/3 or bottom 1/3 (avoid center for face visibility)
+### Ví dụ cảnh chi tiết:
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CẢNH 1 — 0:00-0:03 (HOOK)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+👁️ HÌNH ẢNH:
+  - Nhân vật: Hammy (hamster béo màu cam) đứng thẳng, hai tay chống hông
+    Biểu cảm: Tự tin, mắt ánh lên quyết tâm
+    Tư thế: Nhìn thẳng vào camera, ngực ưỡn ra
+  - Bối cảnh: Trước cổng ngân hàng khổng lồ, góc máy thấp nhìn lên
+    Ngân hàng cao như tòa nhà chọc trời so với Hammy
+  - Chuyển động: Ken Burns zoom out chậm để lộ kích thước ngân hàng
+  - Chi tiết: Ánh nắng buổi sáng, bóng Hammy dài trên mặt đường
+
+🎨 DALL-E PROMPT:
+  "Hammy, a tiny chubby round orange hamster with big black eyes,
+  wearing yellow cherry-print shorts, standing confidently arms akimbo
+  in front of a massive marble bank building that towers above him,
+  dramatic low angle shot, morning golden light, photorealistic, 9:16 vertical"
+  Negative: "blurry, deformed, text, watermark, multiple characters"
+
+📝 TEXT OVERLAY:
+  Nội dung: "Hammy có kế hoạch 😤"
+  Vị trí: Bottom 1/3
+  Font: Bold white + black stroke, size lớn
+
+🔊 ÂM THANH:
+  Nhạc nền: Spy/sneaky piano theme (bắt đầu nhẹ)
+  SFX: Dramatic single piano chord khi text hiện ra
+  Volume nhạc: 60%
+
+⏱️ THỜI LƯỢNG: 3 giây
+🎭 CẢM XÚC: Tò mò + hào hứng — "Cái gì đây?!"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+### Quy tắc âm thanh theo từng loại cảnh:
+
+| Loại cảnh | Nhạc nền | SFX gợi ý |
+|---|---|---|
+| HOOK | Dramatic sting / Silence → bang | Single piano chord |
+| SETUP | Sneaky/spy theme | Footsteps, paper rustle |
+| CONFLICT | Tension buildup | Machine hum, creaking |
+| PEAK | Music STOPS → chaos | Explosion, scream |
+| TWIST | Sad trombone / Magic sparkle | Record scratch, fail horn |
+| CTA | Upbeat happy | Victory fanfare (mini) |
+
+### Quy tắc hình ảnh đa frame → video:
+
+Mỗi video = **6-15 frames ảnh AI** ghép thành video trong CapCut:
+- Frame 1-2: HOOK (3-6 giây)
+- Frame 3-5: SETUP + CONFLICT (10-15 giây)
+- Frame 6-8: PEAK (8-10 giây)
+- Frame 9-10: TWIST (5-7 giây)
+- Frame 11-12: RESOLUTION + CTA (5-7 giây)
+
+**Ken Burns effect** trên mỗi frame tạo cảm giác chuyển động dù ảnh tĩnh:
+- Zoom in: tạo tension, dramatic
+- Zoom out: reveal surprise
+- Pan left/right: following character movement
 
 ---
 
